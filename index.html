@@ -10,29 +10,172 @@
   <header>
     <a href="#">NETFLIX</a>
 
-    <nav aria-label="Conta">
-      <ul>
-        <li><a href="#">Entrar</a></li>
-      </ul>
-    </nav>
+    <form action="#">
+      <label for="idioma">Idioma</label>
+      <select id="idioma" name="idioma">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+    </form>
+
+    <a href="#">Entrar</a>
   </header>
 
   <main>
-    <h1>Filmes, séries e muito mais, sem limites</h1>
-    <p>Assista onde quiser. Cancele quando quiser.</p>
+    <h1>Mais tempo assistindo. Menos tempo buscando.</h1>
+    <p>A partir de R$ 20,90. Cancele quando quiser.</p>
+
+    <section aria-labelledby="assinatura-titulo">
+      <h2 id="assinatura-titulo">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h2>
+
+      <form action="#">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <button type="submit">Vamos lá</button>
+      </form>
+    </section>
+
+    <aside aria-label="Promoção">
+      <p>A Netflix que você adora por apenas R$ 20,90. Aproveite nossa opção mais acessível, o plano com anúncios.</p>
+      <a href="#">Saiba mais</a>
+    </aside>
+
+    <section aria-labelledby="em-alta-titulo">
+      <h2 id="em-alta-titulo">Em alta</h2>
+
+      <ol>
+        <li>
+          <img src="https://picsum.photos/seed/farah/300/450" alt="Cartaz do filme Eu Nome É Farah">
+        </li>
+        <li>
+          <img src="https://picsum.photos/seed/mentalista/300/450" alt="Cartaz da série Mentalista">
+        </li>
+        <li>
+          <img src="https://picsum.photos/seed/nando/300/450" alt="Cartaz do filme Nando: Entre Dois Mundos">
+        </li>
+        <li>
+          <img src="https://picsum.photos/seed/algomagica/300/450" alt="Cartaz do filme Algo Mágica">
+        </li>
+        <li>
+          <img src="https://picsum.photos/seed/outerbanks/300/450" alt="Cartaz da série Outer Banks">
+        </li>
+        <li>
+          <img src="https://picsum.photos/seed/beautyinblack/300/450" alt="Cartaz da série Beauty in Black">
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="motivos-titulo">
+      <h2 id="motivos-titulo">Mais motivos para assinar</h2>
+
+      <article>
+        <h3>Aproveite na TV</h3>
+        <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+      </article>
+
+      <article>
+        <h3>Baixe séries para assistir offline</h3>
+        <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+      </article>
+
+      <article>
+        <h3>Assista onde quiser</h3>
+        <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+      </article>
+
+      <article>
+        <h3>Crie perfis para crianças</h3>
+        <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="faq-titulo">
+      <h2 id="faq-titulo">Perguntas frequentes</h2>
+
+      <article>
+        <details>
+          <summary>O que é a Netflix?</summary>
+          <p>A Netflix é um serviço de streaming que oferece uma variedade de séries, filmes e documentários premiados, em milhares de aparelhos conectados à internet.</p>
+        </details>
+      </article>
+
+      <article>
+        <details>
+          <summary>Quanto custa a Netflix?</summary>
+          <p>Assista à Netflix em um plano mensal a partir de um preço acessível. Não há taxas extras nem contratos.</p>
+        </details>
+      </article>
+
+      <article>
+        <details>
+          <summary>Onde posso assistir?</summary>
+          <p>Assista em qualquer lugar, a qualquer hora. Faça login com sua conta Netflix para assistir instantaneamente pela internet no site, ou em qualquer dispositivo compatível.</p>
+        </details>
+      </article>
+
+      <article>
+        <details>
+          <summary>Como faço para cancelar?</summary>
+          <p>A Netflix é flexível. Não há contratos chatos e nenhum compromisso. Você pode cancelar sua assinatura facilmente online, quando quiser.</p>
+        </details>
+      </article>
+
+      <article>
+        <details>
+          <summary>O que eu posso assistir na Netflix?</summary>
+          <p>A Netflix tem uma ampla variedade de séries, filmes, animes, documentários premiados e muito mais, em milhares de aparelhos conectados à internet.</p>
+        </details>
+      </article>
+
+      <article>
+        <details>
+          <summary>A Netflix é adequada para crianças?</summary>
+          <p>A experiência Netflix Kids está incluída na sua assinatura, para dar aos pais mais tranquilidade, com controles parentais fáceis de usar.</p>
+        </details>
+      </article>
+    </section>
   </main>
 
   <footer>
+    <section aria-labelledby="assinatura-footer-titulo">
+      <h2 id="assinatura-footer-titulo">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h2>
+
+      <form action="#">
+        <label for="email-footer">Email</label>
+        <input type="email" id="email-footer" name="email" placeholder="Email" required>
+        <button type="submit">Vamos lá</button>
+      </form>
+    </section>
+
+    <p>Dúvidas? Ligue para <a href="tel:08005918943">0800 591 8943</a></p>
+
     <nav aria-label="Links do rodapé">
       <ul>
         <li><a href="#">Perguntas frequentes</a></li>
         <li><a href="#">Central de Ajuda</a></li>
         <li><a href="#">Conta</a></li>
+        <li><a href="#">Media Center</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Relações com investidores</a></li>
         <li><a href="#">Carreiras</a></li>
+        <li><a href="#">Resgatar cartão pré-pago</a></li>
+        <li><a href="#">Comprar cartão pré-pago</a></li>
+      </ul>
+      <ul>
         <li><a href="#">Formas de assistir</a></li>
         <li><a href="#">Termos de Uso</a></li>
         <li><a href="#">Privacidade</a></li>
         <li><a href="#">Preferências de cookies</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Informações corporativas</a></li>
+        <li><a href="#">Entre em contato</a></li>
+        <li><a href="#">Teste de velocidade</a></li>
+        <li><a href="#">Avisos legais</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Só na Netflix</a></li>
       </ul>
     </nav>
 
