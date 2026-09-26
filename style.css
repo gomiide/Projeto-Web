@@ -90,3 +90,92 @@ h3 {
 p {
   color: var(--cor-texto-secundario);
 }
+
+/* ===== Layout geral (mobile first) ===== */
+main,
+footer {
+  padding: var(--espaco-medio);
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espaco-pequeno);
+  padding: var(--espaco-medio);
+  background-color: var(--cor-fundo);
+}
+
+header a:first-child {
+  color: var(--cor-destaque);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-pequeno);
+}
+
+header form label {
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario);
+}
+
+header select {
+  background-color: transparent;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  padding: 0.25rem;
+}
+
+header a:last-child {
+  background-color: var(--cor-destaque);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* ===== Seção de assinatura (formulário do hero) ===== */
+#assinatura-titulo {
+  text-align: center;
+}
+
+section[aria-labelledby="assinatura-titulo"] {
+  text-align: center;
+  padding: var(--espaco-grande) 0;
+}
+
+section[aria-labelledby="assinatura-titulo"] form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-pequeno);
+  max-width: 400px;
+  margin: var(--espaco-medio) auto 0;
+}
+
+section[aria-labelledby="assinatura-titulo"] label {
+  position: absolute;
+  left: -9999px;
+}
+
+section[aria-labelledby="assinatura-titulo"] input {
+  padding: 0.75rem;
+  border: 1px solid var(--cor-borda);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--cor-texto);
+}
+
+section[aria-labelledby="assinatura-titulo"] button {
+  padding: 0.75rem;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+section[aria-labelledby="assinatura-titulo"] button:hover {
+  background-color: var(--cor-destaque-hover);
+}
