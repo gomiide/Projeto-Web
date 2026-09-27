@@ -179,3 +179,72 @@ section[aria-labelledby="assinatura-titulo"] button {
 section[aria-labelledby="assinatura-titulo"] button:hover {
   background-color: var(--cor-destaque-hover);
 }
+
+/* ===== Aside da promoção ===== */
+aside {
+  background-color: var(--cor-card);
+  padding: var(--espaco-medio);
+  margin: var(--espaco-medio) 0;
+  border-left: 4px solid var(--cor-destaque);
+}
+
+aside a {
+  display: inline-block;
+  margin-top: var(--espaco-pequeno);
+  text-decoration: underline;
+}
+
+/* ===== Em alta ===== */
+section[aria-labelledby="em-alta-titulo"] ol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-medio);
+}
+
+section[aria-labelledby="em-alta-titulo"] img {
+  border-radius: 4px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+/* ===== Mais motivos para assinar ===== */
+section[aria-labelledby="motivos-titulo"] {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-medio);
+}
+
+section[aria-labelledby="motivos-titulo"] article {
+  background-color: var(--cor-card);
+  padding: var(--espaco-medio);
+  border-radius: 4px;
+}
+
+/* ===== FAQ ===== */
+section[aria-labelledby="faq-titulo"] article {
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+section[aria-labelledby="faq-titulo"] summary {
+  padding: var(--espaco-medio) 0;
+  font-size: 1.125rem;
+  list-style: none;
+}
+
+section[aria-labelledby="faq-titulo"] summary::-webkit-details-marker {
+  display: none;
+}
+
+section[aria-labelledby="faq-titulo"] summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.5rem;
+}
+
+section[aria-labelledby="faq-titulo"] details[open] summary::after {
+  content: "−";
+}
+
+section[aria-labelledby="faq-titulo"] details p {
+  padding-bottom: var(--espaco-medio);
+}
