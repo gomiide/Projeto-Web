@@ -253,6 +253,59 @@ section[aria-labelledby="faq-titulo"] details p {
   padding-bottom: var(--espaco-medio);
 }
 
+/* ===== Formulário e nav do footer ===== */
+footer h2 {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+footer section[aria-labelledby="assinatura-footer-titulo"] form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-pequeno);
+  max-width: 400px;
+  margin: var(--espaco-medio) auto var(--espaco-grande);
+}
+
+footer section[aria-labelledby="assinatura-footer-titulo"] label {
+  position: absolute;
+  left: -9999px;
+}
+
+footer section[aria-labelledby="assinatura-footer-titulo"] input {
+  padding: 0.75rem;
+  border: 1px solid var(--cor-borda);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--cor-texto);
+}
+
+footer section[aria-labelledby="assinatura-footer-titulo"] button {
+  padding: 0.75rem;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  font-weight: 700;
+}
+
+footer section[aria-labelledby="assinatura-footer-titulo"] button:hover {
+  background-color: var(--cor-destaque-hover);
+}
+
+footer > p {
+  text-align: center;
+  margin-bottom: var(--espaco-grande);
+}
+
+footer nav a {
+  display: block;
+  padding: 0.25rem 0;
+  color: var(--cor-texto-secundario);
+}
+
+footer nav a:hover {
+  color: var(--cor-texto);
+  text-decoration: underline;
+}
+
 /* ===== Responsividade: telas maiores ===== */
 @media (min-width: 768px) {
   main,
@@ -291,5 +344,14 @@ section[aria-labelledby="faq-titulo"] details p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--espaco-grande);
+  }
+
+  footer section[aria-labelledby="assinatura-footer-titulo"] form {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  footer section[aria-labelledby="assinatura-footer-titulo"] input {
+    flex: 1;
   }
 }
