@@ -208,7 +208,11 @@ section[aria-labelledby="em-alta-titulo"] img {
 }
 
 /* ===== Mais motivos para assinar ===== */
-section[aria-labelledby="motivos-titulo"] {
+section[aria-labelledby="motivos-titulo"] h2 {
+  margin-bottom: var(--espaco-medio);
+}
+
+section[aria-labelledby="motivos-titulo"] > div {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--espaco-medio);
@@ -247,4 +251,45 @@ section[aria-labelledby="faq-titulo"] details[open] summary::after {
 
 section[aria-labelledby="faq-titulo"] details p {
   padding-bottom: var(--espaco-medio);
+}
+
+/* ===== Responsividade: telas maiores ===== */
+@media (min-width: 768px) {
+  main,
+  footer {
+    padding: var(--espaco-grande);
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  section[aria-labelledby="assinatura-titulo"] form {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  section[aria-labelledby="assinatura-titulo"] input {
+    flex: 1;
+  }
+
+  section[aria-labelledby="em-alta-titulo"] ol {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  section[aria-labelledby="motivos-titulo"] > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaco-pequeno) var(--espaco-grande);
+  }
+
+  footer nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--espaco-grande);
+  }
 }
